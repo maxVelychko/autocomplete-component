@@ -1,0 +1,29 @@
+.suggestionsList {
+  box-sizing: border-box;
+  border: 0.1rem solid #e7e9f5;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 20rem;
+  overflow-y: scroll;
+  padding: 1rem 0;
+}
+
+.suggestionsList li {
+  padding: 0.8rem 1.4rem;
+}
+
+.suggestionSelected {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.suggestionsEmptyState {
+  padding: 1.4rem 1.4rem 0 1.4rem;
+  color: #8189a9;
+  font-style: italic;
+}
+
+.emptyStateText {
+  margin: 0;
+}

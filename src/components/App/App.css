@@ -1,0 +1,9 @@
+.app {
+  min-height: 100vh;
+}
+
+.pageBody {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
