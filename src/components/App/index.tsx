@@ -30,6 +30,8 @@ const App = () => {
     <div className="app">
       <div className="pageBody">
         <Autocomplete
+          title="Pokemons Search"
+          placeholder="Search by name"
           suggestions={suggestions}
         />
       </div>

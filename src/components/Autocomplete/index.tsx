@@ -4,7 +4,11 @@ import SuggestionsList from './SuggestionsList';
 import { Suggestions, AutocompleteProps } from './Autocomplete.types';
 import './Autocomplete.css';
 
-const Autocomplete = ({ suggestions }: AutocompleteProps) => {
+const Autocomplete = ({
+	suggestions,
+	title = 'Search',
+	placeholder = 'Type the text',
+}: AutocompleteProps) => {
 	const [inputValue, setInputValue] = useState('');
 	const [showSuggestions, setShowSuggestions] = useState(false);
 	const [matchingSuggestions, setMatchingSuggestions] = useState<Suggestions>([]);
@@ -114,8 +118,11 @@ const Autocomplete = ({ suggestions }: AutocompleteProps) => {
 
 	return (
 		<div className="autocompleteWrapper" onKeyDown={handleKeyDown}>
+			<p className="autocompleteTitle">{title}</p>
 			<input
+				className="autocompleteInput"
 				type="text"
+				placeholder={placeholder}
 				onChange={handleInputChange}
 				value={inputValue}
 			/>
